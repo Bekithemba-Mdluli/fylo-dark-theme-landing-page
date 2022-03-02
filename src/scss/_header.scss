@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    @include breakpoint-up(large) {
+        height: 180px;
+    }
+
+    &__image {
+        height: 22px;
+        @include breakpoint-up(large) {
+            height: 56px;
+        }
+
+        img {
+            height: 100%;
+              
+        }
+    }
+
+    &__nav {
+        &-items {
+            display: flex;
+            list-style: none;
+
+            :not(:last-child) {
+                margin-right: 21px;
+            }
+
+            a {
+                color: #DBE2EC;
+                transition: 0.4s;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
