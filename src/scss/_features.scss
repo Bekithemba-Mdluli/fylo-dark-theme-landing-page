@@ -1,0 +1,38 @@
+.feature {
+    margin-top: 118px;
+    // background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+
+    @include breakpoint-up(large) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 10%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint-up(large) {
+            max-width: 340px;
+        }
+
+
+
+        &-body {
+            margin-top: 20px;
+            text-align: center;
+            h3 {
+                margin: 0;
+                margin-bottom: 8px;
+            }
+
+            
+        }
+    }
+}

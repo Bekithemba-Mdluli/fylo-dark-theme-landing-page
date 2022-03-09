@@ -1,0 +1,70 @@
+.users {
+    display: flex;
+    // background-color: aqua;
+    margin-top: 138px;
+    flex-direction: column;
+    gap: 22px;
+    
+    @include breakpoint-up(large) {
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    &__card {
+        background-color: $primaryBlue4;
+        padding-left: 17px;
+        padding-right: 19px;
+        padding-top: 33px;
+        padding-bottom: 19px;
+        border-radius: 8px;
+        margin-inline: 20px;
+
+        @include breakpoint-up(large) {
+            width: 362px;
+        }
+
+        &-text {
+            margin-bottom: 25px;
+        }
+
+
+        &-body {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            &-img {
+                    width: 34px;
+                    height: 34px;
+                    margin-right: 10px;
+                img {
+
+                    object-fit: contain;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            &-desc {
+
+                p{
+                    &:last-child {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// .c {    
+//     ::before {
+//         content: '';
+//         background-image: url('../images/bg-quotes.png');
+//         background-repeat: no-repeat;
+//         background-size: auto;
+//     }
+// }

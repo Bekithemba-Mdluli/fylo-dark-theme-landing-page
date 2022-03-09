@@ -1,0 +1,51 @@
+.access {
+    margin-top: 142px;
+
+    &__card {
+        border-radius: 8px;
+        background-color: $primaryBlue4;
+        padding: 25px;
+        // padding-inline: 25px;
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            // color: green;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+
+
+            &-input {
+                padding-left: 27px;
+                border-radius: 30px;
+                background-color: $white;
+                input[type='text'] {
+                    width: 100%;
+                    padding-block: 18px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+
+            &-btn {
+                margin-top: 27px;
+                button {
+                    border-radius: 30px;
+                    border: none;
+                    width: 100%;
+                    padding-block: 18px;
+                    background-color: $accentCyan;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
