@@ -11,7 +11,8 @@ function Users() {
         {/* <div>
             <img src={} alt='quote' />
         </div> */}
-        <div className='users__card c'>
+        <div className='c'></div>
+        <div className='users__card'>
             <div className='users__card-text'>
                 <p>  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
                 become a well-oiled collaboration machine.</p>

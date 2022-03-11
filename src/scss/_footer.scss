@@ -1,0 +1,116 @@
+.footer {
+    background-color: $primaryBlue3;
+    // height: 400px;
+
+    padding-top: 300px;
+
+    @include breakpoint-up(large) {
+        padding-top: 180px;
+        padding-bottom: 94px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        // align-items: center;
+        margin-top: 42px;
+
+        @include breakpoint-up(large) {
+            flex-direction: row;
+        }
+
+        &-location {
+            display: flex;
+
+            &-img {
+                margin-right: 25px;
+            }
+
+
+            @include breakpoint-up(large) {
+                width: 25%;
+            }
+
+        }
+
+        &-contact {
+            margin-top: 25px;
+
+            &-2 {
+                margin-top: 25px;
+            }
+
+            img {
+                margin-right: 25px;
+            }
+
+            @include breakpoint-up(large) {
+                margin-top: unset;
+            }
+        }
+
+        &-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 86px;
+
+            @include breakpoint-up(large) {
+                margin-top: unset;
+                flex-direction: row;
+            }
+
+            ul {
+                // margin: 0;
+                padding: 0;
+                list-style: none;
+                @include breakpoint-up(large) {
+                    margin-top: 0;
+                }
+            }
+
+            &-1 {
+                padding-bottom: 54px;
+                :not(:last-child) {
+                    margin-bottom: 25px;
+
+                    @include breakpoint-up(large) {
+                        margin-right: 82px;
+                    }
+                }
+            }
+
+            &-2 {
+                :not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        &-social {
+            margin-top: 73px;
+            padding-bottom: 39px;
+            justify-content: center;
+
+            @include breakpoint-up(large) {
+                margin-top: 0;
+            }
+
+            img {
+                border: 2px solid $white;
+                border-radius: 50%;
+                padding: 4px;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    border: 2px solid $accentCyan;
+                }
+            }
+            
+            :not(:last-child) {
+                margin-right: 13px;
+            }
+        }
+    }
+}
